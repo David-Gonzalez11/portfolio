@@ -14,30 +14,40 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 function App() {
   return (
     <>
-      <Navbar bg="dark" data-bs-theme="dark">
-        <Nav.Link>
-          <a
-            href="https://www.linkedin.com/in/david-gonzalez2/"
-            className="links resume"
-          >
-            <span>Resume</span>
-          </a>
-        </Nav.Link>
-      </Navbar>
+      <div className="container">
+        <Navbar bg="dark" data-bs-theme="dark" className="w-100">
+          <Nav.Link>
+            <a
+              href="https://www.linkedin.com/in/david-gonzalez2/"
+              className="links resume"
+            >
+              <span>David Gonzalez</span>
+              <span>Resume</span>
+              <span>LinkedIn <FontAwesomeIcon icon={faLinkedin}/></span>
+              <span>GitHub <FontAwesomeIcon icon={faSquareGithub}/></span>
+            </a>
+          </Nav.Link>
+        </Navbar>
+        <div className="row">
+          {/* <p>Front End Web Developer</p> */}
+          <p className="column">
+            Software Engineer looking to pursue a career in tech and show my
+            skills to the right company.
+          </p>
+          <div className="column">
+            <img
+              src="https://png.pngtree.com/element_our/20200610/ourmid/pngtree-character-default-avatar-image_2237203.jpg"
+              style={{ width: "300px" }}
+              alt="placeholder"
+            />
+          </div>
 
-      <br />
-      <div className="background">
-        {/* <p>Front End Web Developer</p> */}
-        <h3>David Gonzalez</h3>
-        <p className="background">
-          Software Engineer looking to pursue a career in tech and show my
-          skills to the right company.
-        </p>
-        <img src="https://png.pngtree.com/element_our/20200610/ourmid/pngtree-character-default-avatar-image_2237203.jpg" />
-      </div>
-      <div className="App-header">
+
+        </div>
+        {/* <div className="App-header">
         <FontAwesomeIcon icon={faSquareGithub} className="text-white icons" />
         <FontAwesomeIcon icon={faLinkedin} className="text-white icons" />
+      </div> */}
       </div>
     </>
   )
