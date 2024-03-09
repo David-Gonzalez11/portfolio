@@ -11,11 +11,13 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import { faSquareGithub } from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 // import { faLinkedin} from "@fortawesome/free-brands-svg-icons"
+import weatherImage from "../src/images/weather.png"
+import foodie from "../src/images/foodie.jpeg"
 function App() {
   return (
     <>
-      <div className="container g-0">
-        <Navbar className="g-0">
+      <div className="container g-0 min-vh-100  ">
+        <Navbar className="g-0" style={{ backgroundColor: "#282c34" }}>
           <Nav>
             <Nav.Link
               className="links"
@@ -44,10 +46,12 @@ function App() {
         <div className="row">
           {/* <p>Front End Web Developer</p> */}
           <div className="column">
-            <p>
-              Hello, My name is David Gonzalez and I am a Front-End Developer
+            <p className="experience-paragraph">
+              A software developer with experience in building Responsive and
+              Scalable Web apps. I am well-knowledged in UI/UX principles and
+              practices.
             </p>
-            <div>
+            <div className="column">
               <img
                 src="https://png.pngtree.com/element_our/20200610/ourmid/pngtree-character-default-avatar-image_2237203.jpg"
                 style={{
@@ -60,16 +64,34 @@ function App() {
             </div>
           </div>
           <div className="column">
-            <h3>About</h3>
+            <h3>Skills</h3>
           </div>
         </div>
-        {/* <div className="row"> */}
-        {/* <div className="column">
-            <h1>Technologies </h1>
+        <div className="row">
+          <div className="column">
+            <div className="">
+              <p className="stacks">HTML</p>
+            </div>
+            <div className="">
+              <p className="stacks">CSS</p>
+            </div>
+            <div className="">
+              <p className="stacks">JAVASCRIPT</p>
+            </div>
+            <div className="">
+              <p className="stacks">REACT</p>
+            </div>
+            <div className="">
+              <p className="stacks">GITHUB</p>
+            </div>
+            <div className="">
+              <p className="stacks">NODE JS</p>
+            </div>
+            <div className="">
+              <p className="stacks">PostgreSQL</p>
+            </div>
 
-          </div> */}
-        {/* <div className="column">
-             <img src="https://user-images.githubusercontent.com/24907191/185052395-797da3f8-04c3-41d3-a146-1148676762e7.png" />
+            {/* <img src="https://user-images.githubusercontent.com/24907191/185052395-797da3f8-04c3-41d3-a146-1148676762e7.png" />
             <img src="https://user-images.githubusercontent.com/24907191/185052405-6e25fa88-0581-469c-a8f5-5739fb884082.png" />
             <img src="https://user-images.githubusercontent.com/24907191/185052418-1e8eb9e2-a031-400f-8dc6-b1c1ea0ca447.png" />
             <img src="https://user-images.githubusercontent.com/24907191/185052427-4505fc3b-8084-4cb9-99fd-bd62deaefa1b.png" />
@@ -83,13 +105,35 @@ function App() {
             <img src="https://user-images.githubusercontent.com/24907191/185052543-8c722ecf-afeb-4018-bec1-2c67bfd80b96.png" />
             <img src="https://user-images.githubusercontent.com/24907191/185052552-d2c25f83-b155-4844-9517-c82070580913.png" />
             <img src="https://user-images.githubusercontent.com/24907191/185052559-38474ccf-8546-4b20-82d8-12ed3dc98808.png" />
-            <img src="https://user-images.githubusercontent.com/24907191/188064113-4b5245ea-38a6-4429-a9e1-1151bf6ec1d1.png" />
-          </div> */}
-        {/* </div> */}
-        {/* <div className="App-header">
-        <FontAwesomeIcon icon={faSquareGithub} className="text-white icons" />
-        <FontAwesomeIcon icon={faLinkedin} className="text-white icons" />
-      </div> */}
+            <img src="https://user-images.githubusercontent.com/24907191/188064113-4b5245ea-38a6-4429-a9e1-1151bf6ec1d1.png" /> */}
+          </div>
+          <div className="column">
+            <h2>Work</h2>
+          </div>
+
+          <div className="d-flex justify-content-center">
+            {/* This is for the weather application >> */}
+
+            <Nav.Link
+              className="projects"
+              target="_blank"
+              href="https://weather-checke.netlify.app/"
+              rel="noreferrer"
+            >
+              <img className="" alt="weather-project " src={weatherImage} />
+            </Nav.Link>
+            {/* This is for the weather application ^*/}
+              <Nav.Link
+                className="projects"
+                target="_blank"
+                href="http://recipe-finder-6jxvycbi5-david-gonzalez11.vercel.app"
+                rel="noreferrer"
+              >
+                <img alt="foodie" src={foodie} className="" />
+              </Nav.Link>
+
+          </div>
+        </div>
       </div>
     </>
   )
