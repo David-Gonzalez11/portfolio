@@ -122,9 +122,12 @@ margin-bottom: 30px;
 
 .projects{
   width: 30%;
+    overflow-x: hidden;
+    margin-left: 40px;
 }
 img{
   height: 100%;
-  width: 50%;
-  margin-left: 25%
+  width: 60%;
+  margin-left: 25%;
+  overflow-x: hidden;
 }

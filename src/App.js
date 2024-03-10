@@ -13,6 +13,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 // import { faLinkedin} from "@fortawesome/free-brands-svg-icons"
 import weatherImage from "../src/images/weather.png"
 import foodie from "../src/images/foodie.jpeg"
+import profile from "../src/images/PROFILE IMAGE.jpg"
 function App() {
   return (
     <>
@@ -53,7 +54,7 @@ function App() {
             </p>
             <div className="column">
               <img
-                src="https://png.pngtree.com/element_our/20200610/ourmid/pngtree-character-default-avatar-image_2237203.jpg"
+                src={profile}
                 style={{
                   width: "300px",
                   borderRadius: "50px",
